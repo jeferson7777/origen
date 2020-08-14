@@ -1,47 +1,82 @@
-# Git Exercise
+![](https://pataruco.github.io/ga-assets/assets/logos/ga.svg)
 
-## Instructions
+# Ejercicio Git
 
-- Clone this repo using [GitHub Desktop](https://desktop.github.com/)
+## Instrucciones
+
+- Clona este repo
 
   ```sh
-  https://github.com/pataruco/fewd-55-git-sandbox.git
+  git clone git@git.generalassemb.ly:sei-es/perfiles-git-markdown.git
   ```
 
-- Create a **branch** on GitHub Desktop with your `name-surname`, e.g.
+- Crea una **rama** (`branch`) con tu nombre y apellido (`nombre-apellido`), ejemplo
   ```sh
-  pedro-martin
+  git checkout -b pedro-martin
   ```
-- Open this repo in a text editor (VS Code)
-- Create a **folder** with your `name-surname`, e.g.
+- Abre este repo en tu editor de texto (VS Code)
   ```sh
-  pedro-martin
+  code .
   ```
-- Inside the new **folder**, create a `readme.md` file
-- Copy and paste the template below and change the content
-- Commit your change.
-- Push your commit to remote
+- Crea un **directorio** con tu (`nombre-apellido`), ejemplo
+  ```sh
+  mkdir pedro-martin
+  ```
+- Dentro del nuevo **directorio**, crea un archivo `readme.md`
+  ```sh
+  cd pedro-martin
+  touch readme.md
+  ```
+- Copia y pega el [contenido](##plantilla) de la plantilla que esta debajo de estas instrucciones
+- Haz `commit` de tus cambios.
+  ```sh
+  git add .
+  git commit -m "Tu mensaje"
+  ```
+- Empuja a remoto, cambia el `nombre-apellido` por el nombre de tu **rama** (`branch`)
+  ```sh
+  git push --set-upstream origin nombre-apellido
+  ```
+- En remoto crea una **solicitud de extracción** (`pull request`), [instructiones aquí](https://docs.github.com/es/enterprise/2.21/user/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 
-## Template
+## Plantilla
 
 ```markdown
-# Full name
+# Nombre completo
 
-## Favourite movie
+## Película(s) favorita(s)
 
-Movie name
+- nombre de película
+- nombre de película
 
-## Favourite TV Show
+## Programa(s) de TV favorito(s)
 
-TV Show name
+- nombre de programa de TV
+- nombre de programa de TV
 
-## Favourite Song
+## Cancion(es) favorita(s)
 
-Song
+- nombre de canción
 
-## Tasks
+## ¿Qué esperas de este curso?
 
-- link to your home town Wikipedia page Red, e.g [Caracas](https://en.wikipedia.org/wiki/Caracas)
-- Picture of my favourite cartoon:
-  ![Alt text](URL to image)
+Tus expectativas
+
+## ¿Qué esperas de tus instructores?
+
+Tus expectativas
+
+## ¿Qué te motiva a estar aquí?
+
+Tus motivaciones
+
+## ¿Qué preocupaciones tienes sobre este curso?
+
+Tus precupaciones, si tienes alguna
+
+## Tareas
+
+- Haz un enlance de tu ciudad o pueblo natal en Wikipedia, por ejemplo, [Caracas](https://en.wikipedia.org/wiki/Caracas)
+
+- Una imágen de tu caricartura favorita ![Alt text](URL to image)
 ```
